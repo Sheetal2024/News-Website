@@ -21,7 +21,7 @@ const Newsapp = () => {
     setError(null);
     try {
       const response = await fetch(
-        `https://newsapi.org/v2/everything?q=${search}&apiKey=${API_KEY}`
+        `https://gnews.io/v2/everything?q=${search}&apiKey=${API_KEY}`
       );
       
       if (!response.ok) {
